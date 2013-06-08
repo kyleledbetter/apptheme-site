@@ -2,11 +2,11 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.0" type="template" client="site">
 	<name>apptheme</name>
-	<version>1.2</version>
-	<creationDate>5/30/2013</creationDate>
+	<version>1.3</version>
+	<creationDate>6/08/2013</creationDate>
 	<author>Kyle Ledbetter</author>
 	<authorEmail>support@pixelpraise.com</authorEmail>
-	<copyright>Copyright (C) 2005 - 2012 Pixel Praise, LLC. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2005 - 2013 Pixel Praise, LLC. All rights reserved.</copyright>
 	<description>TPL_APPTHEME_XML_DESCRIPTION</description>
 	<files>
 		<filename>component.php</filename>
@@ -62,14 +62,11 @@
 					<option value="ironman">TPL_APPTHEME_OPTION_IRONMAN</option>
 					<option value="masterchief">TPL_APPTHEME_OPTION_MASTERCHIEF</option>
 					<option value="dribbble">TPL_APPTHEME_OPTION_DRIBBBLE</option>
+					<option value="flat">TPL_APPTHEME_OPTION_FLAT</option>
 				</field>
-				<field name="templateColor" class="" type="color" default="#08C"
+				<field name="templateColor" class="" type="color" default="#34495e"
 					label="TPL_APPTHEME_COLOR_LABEL"
 					description="TPL_APPTHEME_COLOR_DESC" />
-
-				<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7"
-					label="TPL_APPTHEME_BACKGROUND_COLOR_LABEL"
-					description="TPL_APPTHEME_BACKGROUND_COLOR_DESC" />
 
 				<field name="logoFile" class="" type="media" default=""
 					label="TPL_APPTHEME_LOGO_LABEL"

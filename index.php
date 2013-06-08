@@ -68,7 +68,7 @@ if ($this->params->get('logoFile'))
 {
 	$logo = '<img src="'. JURI::root() . $this->params->get('logoFile') .'" alt="'. $sitename .'" />';
 }
-else if ($this->params->get('theme') == "carbon" || $this->params->get('theme') == "sepia" || $this->params->get('theme') == "ironman" || $this->params->get('theme') == "masterchief")
+else if ($this->params->get('theme') == "flat" || $this->params->get('theme') == "carbon" || $this->params->get('theme') == "sepia" || $this->params->get('theme') == "ironman" || $this->params->get('theme') == "masterchief")
 {
 	$logo = '<img src="'. JURI::root() .'templates/' .$this->template. '/images/logo-inverse.png" alt="'. $sitename .'" />';
 }
@@ -154,6 +154,15 @@ $link_repo     = (class_exists('PFrepoHelperRoute') ? PFrepoHelperRoute::getRepo
 	<?php if ($this->params->get('theme') == "masterchief"): ?>
 		<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
 	<?php endif; ?>
+	<?php if ($this->params->get('theme') == "flat"): ?>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			.flat .navigation, .flat .breadcrumb, .flat .page-title, .flat .footer
+			{
+				background: <?php echo $this->params->get('templateColor'); ?>;
+			}
+		</style>
+	<?php endif; ?>
 </head>
 
 <body class="<?php echo $this->params->get('theme', 'mac'); ?> site <?php echo $option . " view-" . $view . " layout-" . $layout . " task-" . $task . " itemid-" . $itemid . " ";?>">
@@ -165,7 +174,7 @@ $link_repo     = (class_exists('PFrepoHelperRoute') ? PFrepoHelperRoute::getRepo
 					<jdoc:include type="modules" name="position-0" style="none" />
 				</div>
 				<a class="brand pull-left" href="<?php echo $this->baseurl; ?>">
-						<?php echo $logo;?> 
+						<?php echo $logo;?>
 					</a>
 				<jdoc:include type="modules" name="position-1" style="none" />
 			</div>
@@ -288,17 +297,17 @@ $link_repo     = (class_exists('PFrepoHelperRoute') ? PFrepoHelperRoute::getRepo
 			// Remove pills class from sidebar title nav
 			$(".title-nav ul").removeClass("nav-pills").removeClass("nav").removeClass("menu").addClass("dropdown-menu");
 		});
-		
+
 		<?php if (version_compare(JVERSION, '3', 'ge')) : ?>
-		
+
 		var jPanelMenu = {};
 		$(function() {
 			$('pre').each(function(i, e) {hljs.highlightBlock(e)});
-		
+
 			jPanelMenu = $.jPanelMenu({
 				menu: 'header.main nav'
 			});
-		
+
 			var jR = jRespond([
 				{
 					label: 'small',
@@ -310,7 +319,7 @@ $link_repo     = (class_exists('PFrepoHelperRoute') ? PFrepoHelperRoute::getRepo
 					exit: 10000
 				}
 			]);
-		
+
 			jR.addFunc({
 				breakpoint: 'small',
 				enter: function() {
