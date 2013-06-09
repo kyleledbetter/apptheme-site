@@ -472,6 +472,10 @@ a:hover {
 .container .navigation .nav-pills > li > a {
   padding: 6px 10px;
   margin-right: 4px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .sidebar {
   top: 41px;
@@ -512,6 +516,10 @@ a:hover {
   padding: 4px 10px;
   margin-left: -10px;
   margin-right: -10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .sidebar ul > li > a:hover {
   text-decoration: none;
@@ -6435,6 +6443,10 @@ dl.tabs:after {
 .container-fixed .navigation .nav-pills > li > a {
   padding: 6px 10px;
   margin-right: 4px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container-fixed .sidebar {
   top: 41px;
@@ -6475,6 +6487,10 @@ dl.tabs:after {
   padding: 4px 10px;
   margin-left: -10px;
   margin-right: -10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container-fixed .sidebar ul > li > a:hover {
   text-decoration: none;
@@ -7926,6 +7942,9 @@ dl.tabs:after {
   -moz-box-shadow: inset 0 2px 0 #707968;
   box-shadow: inset 0 2px 0 #707968;
 }
+.masterchief .page-title .dropdown-menu > li > a {
+  text-shadow: none;
+}
 .masterchief .page-title .btn {
   -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.25);
   -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.25);
@@ -8186,6 +8205,9 @@ dl.tabs:after {
   -moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.75);
   box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.75);
 }
+.dribbble .page-title .dropdown-menu > li > a {
+  text-shadow: none;
+}
 .dribbble .content-inner {
   background-color: #e8e6e4;
   -webkit-border-radius: 0 0 10px 10px;
@@ -8288,33 +8310,23 @@ dl.tabs:after {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2c3e50', endColorstr='#ff080b0e', GradientType=0);
 }
 .flat .navigation .nav-pills > li > a {
-  background-color: #2c3f51;
-  background-image: -moz-linear-gradient(top, #354b60, #1f2c39);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#354b60), to(#1f2c39));
-  background-image: -webkit-linear-gradient(top, #354b60, #1f2c39);
-  background-image: -o-linear-gradient(top, #354b60, #1f2c39);
-  background-image: linear-gradient(to bottom, #354b60, #1f2c39);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff354b60', endColorstr='#ff1f2c39', GradientType=0);
-  color: #bfbfbf;
+  background: transparent;
+  color: #ffffff;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  border: 1px solid #000000;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  border: 0;
+  line-height: 27px;
+  margin-top: -5px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.flat .navigation .nav-pills > li > a:hover {
+  background: #000000;
 }
 .flat .navigation .nav-pills > li.active > a {
-  background-color: #000000;
-  background-image: -moz-linear-gradient(top, #000000, #000000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000000), to(#000000));
-  background-image: -webkit-linear-gradient(top, #000000, #000000);
-  background-image: -o-linear-gradient(top, #000000, #000000);
-  background-image: linear-gradient(to bottom, #000000, #000000);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff000000', GradientType=0);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-  border: 1px solid #000000;
+  background: #1abc9c;
+  border: 0;
 }
 .flat .footer {
   background-color: #1e2a36;
@@ -8427,6 +8439,9 @@ dl.tabs:after {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   border-right: 1px solid rgba(0, 0, 0, 0.5);
   border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+.flat .page-title .dropdown-menu > li > a {
+  text-shadow: none;
 }
 .flat .content-inner {
   background-color: #ecf0f1;
@@ -8659,6 +8674,21 @@ dl.tabs:after {
 .flat .btn-inverse.active {
   background-color: #1a242f \9;
 }
+.flat .label-warning {
+  background: #e67e22;
+}
+.flat .label-danger {
+  background: #e74c3c;
+}
+.flat .label-success {
+  background: #16a085;
+}
+.flat .label-info {
+  background: #3498db;
+}
+.flat .label-inverse {
+  background: #2c3e50;
+}
 .flat .progress .bar {
   background: #2980b9;
 }
@@ -8672,7 +8702,7 @@ dl.tabs:after {
 .flat .progress .bar-success,
 .flat .progress-success.progress-striped .bar,
 .flat .progress-striped .bar-success {
-  background: #27ae60;
+  background: #16a085;
 }
 .flat .progress-info .bar,
 .flat .progress .bar-info,
@@ -8718,6 +8748,28 @@ dl.tabs:after {
 /* Component Specific */
 #projectfork > h1 {
   display: none;
+}
+#projectfork.view-dashboard .moduletable .span3 {
+  width: 12%;
+  float: left;
+}
+#projectfork.view-dashboard .moduletable .span3 .btn {
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#projectfork.view-dashboard .moduletable .span3 .btn img {
+  max-width: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+#projectfork.view-dashboard .moduletable .span3 .btn img:hover {
+  filter: contrast(200%);
+  -moz-filter: contrast(200%);
+  -webkit-filter: contrast(200%);
 }
 .list-tasks .btn-group .dropdown-toggle {
   margin-right: 5px;

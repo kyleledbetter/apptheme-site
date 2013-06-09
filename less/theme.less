@@ -115,6 +115,7 @@ dl.tabs {
 		.nav-pills > li > a {
 			padding: 6px 10px;
 			margin-right: 4px;
+			.transition (all 0.5s ease-in-out);
 		}
 	}
 	.sidebar {
@@ -156,6 +157,8 @@ dl.tabs {
 			padding: 4px 10px;
 			margin-left: -10px;
 			margin-right: -10px;
+			.transition (all 0.5s ease-in-out);
+
 			&:hover {
 				text-decoration: none;
 			}
@@ -1112,7 +1115,9 @@ dl.tabs {
 		border-right: 1px solid rgba(0, 0, 0, 0.5);
 		border-left: 1px solid rgba(0, 0, 0, 0.5);
 		.box-shadow (inset 0 2px 0 lighten(@masterchiefNav, 20%));
-
+		.dropdown-menu > li > a {
+			text-shadow: none;
+		}
 		.btn {
 			.box-shadow (0 2px 0 rgba(255, 255, 255, 0.25));
 		}
@@ -1285,6 +1290,10 @@ dl.tabs {
 		.background-clip (border);
 		border: 1px solid darken(@dribbbleSidebar, 65%);
 		.box-shadow (inset 0 2px 0 rgba(255, 255, 255, 0.75));
+
+		.dropdown-menu > li > a {
+			text-shadow: none;
+		}
 	}
 	.content-inner{
 		background-color: @dribbbleBackground;
@@ -1361,17 +1370,22 @@ dl.tabs {
 		#gradient > .vertical(@flatNav, darken(@flatNav, 20%));
 
 		.nav-pills > li > a {
-			#gradient > .vertical(lighten(@flatNav, 5%), darken(@flatNav, 7%));
-			color: darken(@white, 25%);
+			background: transparent;
+			color: @white;
 			font-weight: bold;
 			text-shadow: (1px 1px 1px rgba(0, 0, 0, 0.5));
-			border: 1px solid darken(@flatNav, 35%);
-			.box-shadow (0 1px 0 rgba(255, 255, 255, 0.25));
+			border: 0;
+			line-height: 27px;
+			margin-top: -5px;
+			.border-radius (0);
+
+			&:hover {
+				background: darken(@flatNav, 35%);
+			}
 		}
 		.nav-pills > li.active > a {
-			#gradient > .vertical(darken(@flatNav, 50%), darken(@flatNav, 46%));
-			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-			border: 1px solid darken(@flatNav, 65%);
+			background: @turquoise;
+			border: 0;
 		}
 	}
 	.footer {
@@ -1449,6 +1463,10 @@ dl.tabs {
 		border-top: 1px solid rgba(0, 0, 0, 0.5);
 		border-right: 1px solid rgba(0, 0, 0, 0.5);
 		border-left: 1px solid rgba(0, 0, 0, 0.5);
+
+		.dropdown-menu > li > a {
+			text-shadow: none;
+		}
 	}
 	.content-inner{
 		background-color: @flatBackground;
@@ -1500,6 +1518,23 @@ dl.tabs {
 	.btn-inverse {
 		.buttonBackground(@midnightBlue, @midnightBlue);
 	}
+	// Labels
+	.label-warning {
+		background: @carrot;
+	}
+	.label-danger {
+		background: @alizarin;
+	}
+	.label-success {
+		background: @greenSea;
+	}
+	.label-info {
+		background: @peterRiver;
+	}
+	.label-inverse {
+		background: @midnightBlue;
+	}
+
 	.progress .bar {
 		background: @belizeHole;
 	}
@@ -1512,7 +1547,7 @@ dl.tabs {
 	// Success (green)
 	.progress-success .bar, .progress .bar-success,
 	.progress-success.progress-striped .bar, .progress-striped .bar-success {
-	  background: @nephritis;
+	  background: @greenSea;
 	}
 
 	// Info (teal)
@@ -1567,6 +1602,28 @@ dl.tabs {
 /* Component Specific */
 #projectfork > h1 {
 	display: none;
+}
+#projectfork.view-dashboard {
+	.moduletable {
+		.span3 {
+			width: 12%;
+			float: left;
+			.btn {
+				border: 0;
+				.box-shadow (none);
+
+				img {
+					max-width: 100%;
+					.transition (all 1s ease-in-out);
+					&:hover {
+						filter: contrast(200%);
+						-moz-filter: contrast(200%);
+						-webkit-filter: contrast(200%);
+					}
+				}
+			}
+		}
+	}
 }
 .list-tasks .btn-group .dropdown-toggle {
 	margin-right: 5px;
