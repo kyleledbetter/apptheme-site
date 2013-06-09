@@ -195,7 +195,7 @@ $link_repo     = (class_exists('PFrepoHelperRoute') ? PFrepoHelperRoute::getRepo
 				<?php endif; ?>
 				<div id="content" class="content">
 					<div class="page-title center">
-						<a class="btn <?php if ($this->params->get('theme') == "carbon" || $this->params->get('theme') == "sepia" || $this->params->get('theme') == "ironman" || $this->params->get('theme') == "masterchief") { echo "btn-inverse"; } ?> pull-left sidebar-toggle visible-phone" href="#"><span aria-hidden="true" class="icon-list-view"></span></a>
+						<a class="btn <?php if ($this->params->get('theme') == "carbon" || $this->params->get('theme') == "sepia" || $this->params->get('theme') == "ironman" || $this->params->get('theme') == "masterchief"|| $this->params->get('theme') == "flat") { echo "btn-inverse"; } ?> pull-left sidebar-toggle visible-phone" href="#"><span aria-hidden="true" class="icon-list-view"></span></a>
 							<?php if ($user->id) : ?>
 							<div class="btn-group pull-right title-nav">
 								<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span aria-hidden="true" class="icon-pencil"></span></a>
