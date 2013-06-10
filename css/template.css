@@ -472,10 +472,22 @@ a:hover {
 .container .navigation .nav-pills > li > a {
   padding: 6px 10px;
   margin-right: 4px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+.container .navigation .nav-pills .open > ul > li > .dropdown-toggle {
+  background-color: transparent;
+  color: #333;
+}
+.container .navigation .nav-pills .open > ul > li > .dropdown-toggle:hover {
+  color: #ffffff;
+}
+.container .navigation .pull-right > li > .dropdown-menu,
+.container .navigation .nav > li > .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
 }
 .container .sidebar {
   top: 41px;
@@ -516,10 +528,10 @@ a:hover {
   padding: 4px 10px;
   margin-left: -10px;
   margin-right: -10px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 .container .sidebar ul > li > a:hover {
   text-decoration: none;
@@ -6443,10 +6455,22 @@ dl.tabs:after {
 .container-fixed .navigation .nav-pills > li > a {
   padding: 6px 10px;
   margin-right: 4px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+.container-fixed .navigation .nav-pills .open > ul > li > .dropdown-toggle {
+  background-color: transparent;
+  color: #333;
+}
+.container-fixed .navigation .nav-pills .open > ul > li > .dropdown-toggle:hover {
+  color: #ffffff;
+}
+.container-fixed .navigation .pull-right > li > .dropdown-menu,
+.container-fixed .navigation .nav > li > .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
 }
 .container-fixed .sidebar {
   top: 41px;
@@ -6487,10 +6511,10 @@ dl.tabs:after {
   padding: 4px 10px;
   margin-left: -10px;
   margin-right: -10px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 .container-fixed .sidebar ul > li > a:hover {
   text-decoration: none;
