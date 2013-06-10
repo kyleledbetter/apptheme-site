@@ -51,7 +51,7 @@
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">
-				<field name="theme" type="list" default="mac"
+				<field name="theme" type="list" default="flat"
 					label="TPL_APPTHEME_FIELD_THEME_LABEL"
 					description="TPL_APPTHEME_FIELD_THEME_DESC"
 					filter="word"
