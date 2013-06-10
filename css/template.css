@@ -8300,14 +8300,21 @@ dl.tabs:after {
   border-top: 1px solid #000000;
 }
 .flat .navigation {
-  background-color: #1e2a36;
-  background-image: -moz-linear-gradient(top, #2c3e50, #080b0e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2c3e50), to(#080b0e));
-  background-image: -webkit-linear-gradient(top, #2c3e50, #080b0e);
-  background-image: -o-linear-gradient(top, #2c3e50, #080b0e);
-  background-image: linear-gradient(to bottom, #2c3e50, #080b0e);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2c3e50', endColorstr='#ff080b0e', GradientType=0);
+  background: #233140;
+}
+.flat .navigation .nav .dropdown-toggle .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+  margin-top: 12px;
+}
+.flat .navigation .dropdown-menu li > a:hover,
+.flat .navigation .dropdown-menu li > a:focus,
+.flat .navigation .dropdown-submenu:hover > a,
+.flat .navigation .nav-pills .open > ul > li > .dropdown-toggle:hover {
+  background: #1abc9c;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .flat .navigation .nav-pills > li > a {
   background: transparent;
@@ -8329,17 +8336,14 @@ dl.tabs:after {
   border: 0;
 }
 .flat .footer {
-  background-color: #1e2a36;
-  background-image: -moz-linear-gradient(top, #2c3e50, #080b0e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2c3e50), to(#080b0e));
-  background-image: -webkit-linear-gradient(top, #2c3e50, #080b0e);
-  background-image: -o-linear-gradient(top, #2c3e50, #080b0e);
-  background-image: linear-gradient(to bottom, #2c3e50, #080b0e);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2c3e50', endColorstr='#ff080b0e', GradientType=0);
+  background: #233140;
   -webkit-box-shadow: inset 0 1px 0 #3e5771;
   -moz-box-shadow: inset 0 1px 0 #3e5771;
   box-shadow: inset 0 1px 0 #3e5771;
+  color: #fafafa;
+}
+.flat .footer a {
+  color: #fafafa;
 }
 .flat .footer .nav-pills > li > a {
   background: transparent;
@@ -8362,7 +8366,10 @@ dl.tabs:after {
   background-color: #34495e;
   border-right: 1px solid #000000;
   color: #bfbfbf;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+}
+.flat .sidebar .nav-header {
+  text-shadow: none;
 }
 .flat .sidebar h3 {
   color: #bfbfbf;
@@ -8420,14 +8427,7 @@ dl.tabs:after {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .flat .page-title {
-  background-color: #1e2a36;
-  background-image: -moz-linear-gradient(top, #2c3e50, #080b0e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2c3e50), to(#080b0e));
-  background-image: -webkit-linear-gradient(top, #2c3e50, #080b0e);
-  background-image: -o-linear-gradient(top, #2c3e50, #080b0e);
-  background-image: linear-gradient(to bottom, #2c3e50, #080b0e);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2c3e50', endColorstr='#ff080b0e', GradientType=0);
+  background: #233140;
   color: #d9d9d9;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 10px 10px 0 0;
@@ -8442,6 +8442,14 @@ dl.tabs:after {
 }
 .flat .page-title .dropdown-menu > li > a {
   text-shadow: none;
+}
+.flat .page-title .dropdown-menu li > a:hover,
+.flat .page-title .dropdown-menu li > a:focus,
+.flat .page-title .dropdown-submenu:hover > a {
+  background: #1abc9c;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .flat .content-inner {
   background-color: #ecf0f1;
